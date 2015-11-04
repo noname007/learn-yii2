@@ -20,14 +20,14 @@ class SiteController extends Controller
                 'rules' => [
                     [
                         'actions' => ['logout'],
-                        'allow' => true,
+						'allow' => true,
                         'roles' => ['@'],
                     ],
                 ],
             ],
             'verbs' => [
                 'class' => VerbFilter::className(),
-                'actions' => [
+				'actions' => [
                     'logout' => ['post'],
                 ],
             ],
@@ -49,7 +49,9 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+  		 	echo "hello world!";
+  			echo \Yii::$app->basePath;
+//         return $this->render('index');
     }
 
     public function actionLogin()
