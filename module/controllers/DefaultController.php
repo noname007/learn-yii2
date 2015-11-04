@@ -11,6 +11,14 @@ use yii\web\Controller;
 // TODO module 如params 成员变量怎么赋值的，
 class DefaultController extends Controller
 {
+	function behaviors(){
+		return [
+			[
+				'class'=>'app\common\RequestFilter',
+				'check'=>true		
+			]	
+		];
+	}
     public function actionIndex()
     {
     
