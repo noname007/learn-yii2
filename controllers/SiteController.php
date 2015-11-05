@@ -46,7 +46,11 @@ class SiteController extends Controller
             ],
         ];
     }
-
+    
+    function  actionMaintaince(){
+		return 'maintaince';
+    }
+    
     public function actionIndex()
     {
   		 	echo "hello world!";

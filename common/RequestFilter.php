@@ -8,7 +8,9 @@ class RequestFilter extends ActionFilter{
 	
 	function  beforeAction($action){
 		echo __CLASS__;
-		debug_print_backtrace();
+		echo 'app id ',\Yii::$app->id;
+		var_dump(\Yii::$app);
+// 		debug_print_backtrace();
 		if($this->check){
 			print('check property========================');
 		}

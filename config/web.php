@@ -39,6 +39,8 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
     ],
+	'defaultRoute'=>'site/maintaince',
+// 	'catchAll'=>['site/maintaince'],
     'params' => $params,
 ];
 
