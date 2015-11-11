@@ -23,6 +23,8 @@ class HelloWidget extends Widget{
 		echo '=====================================================run ====================',PHP_EOL;
 // 		debug_print_backtrace();
 // 		throw new \Exception();
+		var_dump($this->getView());
+		
 		return Html::encode($this->m);
 	}
 }
