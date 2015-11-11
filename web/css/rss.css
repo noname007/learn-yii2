@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.left{
+	float:left;
+	width:30%;
+	clear:both;
+}
+.left .left{
+	
+}
+.right{
+	float:right;
+	width:70%;
+}
