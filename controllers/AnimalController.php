@@ -12,6 +12,8 @@
 			$dog->look();
 // 			echo $dog->height;//@see Componet::__get  本类的属性，行为类属性
 			$dog->eat();
+			echo '======================event<br>';
+			$dog->trigger('wang');
 			
 			
 		}

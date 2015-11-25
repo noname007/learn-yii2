@@ -6,4 +6,12 @@
 		function  eat(){
 			echo 'dog eat<br>';
 		}
+		function  events(){
+			return [
+					'wang'=>'shout'
+			];
+		}
+		function  shout($event){
+			echo 'wangwangwagn <BR>';
+		}
 	}
