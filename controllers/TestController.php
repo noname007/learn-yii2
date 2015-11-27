@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 use yii\di\Container;
-use yii\di\yii\di;
+use yii\di\ServiceLocator;
 
 class TestController extends \yii\web\Controller
 {
@@ -15,7 +15,18 @@ class TestController extends \yii\web\Controller
         $car = $container->get('app\controllers\Car');
         $car->run();
     }
-
+    
+    public function actionServicelocator()
+    {
+    	$sl = new ServiceLocator( );
+    	\YII::$container->set('app\controllers\Driver','app\controllers\ManDriver');
+    	$sl->set('car', [
+    			'class'=>'app\controllers\Car'
+    	]);
+    	$car = $sl->get('car');
+    	$car->run();
+//         return $this->render('servicelocator');
+    }
 
 }
 
