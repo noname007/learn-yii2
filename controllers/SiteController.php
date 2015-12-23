@@ -53,9 +53,9 @@ class SiteController extends Controller
     
     public function actionIndex()
     {
-  		 	echo "hello world!";
-  			echo \Yii::$app->basePath;
-//         return $this->render('index');
+//   		 	echo "hello world!";
+//   			echo \Yii::$app->basePath;
+        return $this->render('index');
     }
 
     public function actionLogin()
