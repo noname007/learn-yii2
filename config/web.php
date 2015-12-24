@@ -88,8 +88,10 @@ $config = [
 					'admin/*',
 // 					'cdn/api/*',
 					'site/*',
+					'user/*',
 			]
 	],
+	'params' =>$params,
 ];
 
 if (YII_ENV_DEV) {
