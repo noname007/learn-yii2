@@ -82,15 +82,15 @@ $config = [
 	    	],
 			
     ],
-	'as access' => [
-			'class' => 'mdm\admin\components\AccessControl',
-			'allowActions' => [//下面列出的节点，所有人都可以访问，针对未登录用户的配置也可以移至这里
-					'admin/*',
+// 	'as access' => [
+// 			'class' => 'mdm\admin\components\AccessControl',
+// 			'allowActions' => [//下面列出的节点，所有人都可以访问，针对未登录用户的配置也可以移至这里
+// 					'admin/*',
 // 					'cdn/api/*',
-					'site/*',
-					'user/*',
-			]
-	],
+// 					'site/*',
+// 					'user/*',
+// 			]
+// 	],
 	'params' =>$params,
 ];
 

@@ -3,10 +3,11 @@
 namespace app\controllers;
 use yii\di\Container;
 use yii\di\ServiceLocator;
+use yii\web\Controller;
 
-class TestController extends \yii\web\Controller
+class TestController extends Controller
 {
-
+	public $defaultAction = 'container';
     public function actionContainer()
     {
         $container = new Container();
